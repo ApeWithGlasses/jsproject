@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/f92d537426.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <title>Transporte</title>
+</head>
+<body>
+    <header>
+        <div class="up-header">
+            <div class="logo">
+                <img src="img/logo.png" alt="">
+            </div>
+            <div class="search">
+                <input type="search" placeholder="¿Qué estás buscando?">
+            </div>
+        </div>
+        <div class="container-menu">
+            <input type="checkbox" id="check-menu">
+            <label for="check-menu" id="label-check">
+                <i class="fa-solid fa-bars icon-menu"></i>
+            </label>
+            <div class="menu">
+                <nav>
+                    <ul>
+                        <li><a href="index.html" id="selected"></a></li>
+                        <li><a href="#">Servicios</a>
+                            <ul>
+                                <li><a href="app/aerial.html">Transporte aereo</a></li>
+                                <li><a href="app/river.html">Transporte fluvial</a></li>
+                                <li><a href="app/land.html">Transporte terrestre</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Nosotros</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Contacto</a></li>
+                        <li><a href="#">Historia</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <main>
+        <article>
+            <h2 class="subtitle">CALCULE EL COSTO DE SU VIAJE</h2>
+            <div class="container-form">
+                <form id="form" name="data">
+                    <label>Trayecto</label>
+                    <select name="" id="journey">
+                        <option disabled selected>Seleccion su trayecto</option>
+                        <optgroup label="Vuelos desde Medellín">
+                            <option value="1">Medellín - Bogotá</option>
+                            <option value="2">Medellín - Cartagena</option>
+                            <option value="3">Medellín - Santa Marta</option>
+                        </optgroup>
+
+                        <optgroup label="Vuelos desde Bogotá">
+                            <option value="4">Bogotá - Medellín</option>
+                            <option value="5">Bogotá - Cartagena</option>
+                            <option value="6">Bogotá - Santa Marta</option>
+                        </optgroup>
+                    </select>
+
+                    <label for="">Aereolíneas</label>
+                    <select name="" id="aerolines">
+                        <option disabled selected>Seleccione su aerolínea y costo</option>
+                        <option value="1">Avianca - 1.200.000</option>
+                        <option value="2">LATAM Aerolines - 1.000.000</option>
+                    </select>
+
+                    <label for="">Cantidad de pasajes</label>
+                    <select name="" id="tickets">
+                        <option disabled selected>Seleccione la cantidad de tiquetes</option>
+                        <optgroup label="Único">
+                            <option value="1">1 persona</option>
+                        </optgroup>
+
+                        <optgroup label="Doble">
+                            <option value="2">2 personas - 3% OFF</option>
+                        </optgroup>
+
+                        <optgroup label="Triple">
+                            <option value="3">3 personas 4% OFF</option>
+                        </optgroup>
+
+                        <optgroup label="Familiar">
+                            <option value="4">5 personas 10% OFF</option>
+                        </optgroup>
+                    </select>
+
+                    <input type="submit" value="CALCULAR COSTOS">
+
+                    <div id="result" class="result">
+
+                    </div>
+                </form>
+            </div>
+        </article>
+    </main>
+    <script src="js/script.js"></script>
+</body>
+</html>
