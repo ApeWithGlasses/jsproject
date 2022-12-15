@@ -39,20 +39,20 @@ function jcalculator(e) {
         }
         if (tickets == 2) {
             let total = 1200000;
-            let discount = total * 0.03;
-            let afterdiscount = total - (total * 0.03);
+            let discount = 2 * (total * 0.03);
+            let afterdiscount = 2 * (total - (total * 0.03));
             UI(discount, afterdiscount)
         }
         if (tickets == 3) {
             let total = 1200000;
-            let discount = total * 0.04;
-            let afterdiscount = total - (total * 0.04);
+            let discount = 3 * (total * 0.04);
+            let afterdiscount = 3 * (total - (total * 0.04));
             UI(discount, afterdiscount)
         }
         if (tickets == 4) {
             let total = 1200000;
-            let discount = total * 0.1;
-            let afterdiscount = total - (total * 0.1);
+            let discount = 5 * (total * 0.1);
+            let afterdiscount = 5 * (total - (total * 0.1));
             UI(discount, afterdiscount)
         }
     } 
@@ -84,20 +84,20 @@ function jcalculator(e) {
         }
         if (tickets == 2) {
             let total = 1000000;
-            let discount = total * 0.03;
-            let afterdiscount = total - (total * 0.03);
+            let discount = 2 * (total * 0.03);
+            let afterdiscount = 2 * (total - (total * 0.03));
             UI(discount, afterdiscount)
         }
         if (tickets == 3) {
             let total = 1000000;
-            let discount = total * 0.04;
-            let afterdiscount = total - (total * 0.04);
+            let discount = 3 * (total * 0.04);
+            let afterdiscount = 3 * (total - (total * 0.04));
             UI(discount, afterdiscount)
         }
         if (tickets == 4) {
             let total = 1000000;
-            let discount = total * 0.1;
-            let afterdiscount = total - (total * 0.1);
+            let discount = 5 * (total * 0.1);
+            let afterdiscount = 5 * (total - (total * 0.1));
             UI(discount, afterdiscount)
         }
     }
@@ -119,5 +119,5 @@ function UI(discount, afterdiscount) {
 }
 
 function reset() {
-    document.getElementById('form').reset()
+    document.getElementById('form').reset();
 }
